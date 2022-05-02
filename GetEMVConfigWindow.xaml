@@ -1,0 +1,48 @@
+﻿<Window x:Class="MTNETDemo.GetEMVConfigWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:MTNETDemo"
+        mc:Ignorable="d"
+        Title="Get EMV Configuration" Height="350" Width="340" WindowStartupLocation="CenterOwner">
+    <Grid Margin="40,10,40,10">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="80"/>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="110"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0">
+            <Label Content="Category:" FontWeight="Bold"/>
+            <StackPanel Margin="20,0,0,0">
+                <RadioButton Name="TerminalRB" GroupName="EMVConfigRB" Content="Terminal" IsChecked="True"/>
+                <RadioButton Name="ApplicationRB" GroupName="EMVConfigRB" Content="Application" />
+                <RadioButton Name="CapkRB" GroupName="EMVConfigRB" Content="CAPK" />
+            </StackPanel>
+        </StackPanel>
+
+        <StackPanel Grid.Row="1" Orientation="Horizontal">
+            <Label Content="Slot:" VerticalContentAlignment="Center" FontWeight="Bold"/>
+            <TextBox x:Name="SlotTextBox" TextWrapping="Wrap" Text="1" Width="50" VerticalContentAlignment="Center" Height="21"/>
+        </StackPanel>
+
+        <StackPanel Grid.Row="2">
+            <Label Content="Database:" FontWeight="Bold"/>
+            <StackPanel Margin="20,0,0,0">
+                <RadioButton Name="Db0RB" GroupName="EMVDatabaseRB" Content="EMV L2 Contact" IsChecked="True"/>
+                <RadioButton Name="Db1RB" GroupName="EMVDatabaseRB" Content="MCL"/>
+                <RadioButton Name="Db2RB" GroupName="EMVDatabaseRB" Content="payWave"/>
+                <RadioButton Name="Db3RB" GroupName="EMVDatabaseRB" Content="Expresspay"/>
+                <RadioButton Name="Db4RB" GroupName="EMVDatabaseRB" Content="D-PAS"/>
+            </StackPanel>
+        </StackPanel>
+
+        <StackPanel Grid.Row="3" Orientation="Horizontal">
+            <Button x:Name="OKButton" Content="OK" Width="100" Height="30" Margin="20,0,0,0" IsDefault="True" Click="OKButton_Click"/>
+            <Button x:Name="CancelButton" Content="Cancel" Width="100" Height="30" Margin="20,0,0,0" IsCancel="True" Click="CancelButton_Click"/>
+        </StackPanel>
+
+    </Grid>
+</Window>

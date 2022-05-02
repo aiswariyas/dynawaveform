@@ -1,0 +1,85 @@
+**********************************************************************************
+99510132 DYNAMAG, DYNAMAX, EDYNAMO, UDYNAMO, ADYNAMO, BULLET, MDYNAMO, DYNAWAVE, TDYNAMO, IDYNAMO 6 SDK FOR WINDOWS(WEB)
+**********************************************************************************
+Part=V100.01, SDK=100.01, SampleCode=100.01, Date:02.25.2015 
+    
+   * Initial Release
+
+**********************************************************************************
+Part=V102, SDK=102.01, SampleCode=102.01, Date:02.11.2016 
+    
+   * Updated to support EMV devices
+
+**********************************************************************************
+Part=V103, SDK=102.01, SampleCode=103.01, Date:05.17.2016 
+    
+   * Updated Sample Code to support both EMV Message Format 0 and Format 1
+   * Merged code and rebuilt for MTPPSCRANET and MTSCRANET SDK
+   * Remove Strong Name Protection for MTPPSCRANET and MTSCRANET
+
+**********************************************************************************
+**********************************************************************************
+Part=V104, SDK=103.01, SampleCode=104.01, Date:06.16.2016 
+    
+   * Added getCardPAN for SDK 
+   * Updated Sample Code to show masked PAN
+
+**********************************************************************************
+**********************************************************************************
+Part=V105, SDK=105.01, SampleCode=105.01, OEMSampleCode=101.01 Date:11.03.2016 
+    
+   * New OEM Sample Code
+
+**********************************************************************************
+**********************************************************************************
+Part=V106, SDK=105.01, SampleCode=106.01, OEMSampleCode=102.01 Date:01.25.2017 
+    
+   * Updated Sample Code to disable Scan button upon device connected
+   * Updated OEM Sample Code to disable Scan button upon device connected
+   * Updated OEM Sample Code to set time upon OEM device connected
+   * Fixed TLV Parser issue in Sample Code and OEM Sample Code
+   * Added the instruction how to use the demo application.
+
+**********************************************************************************
+**********************************************************************************
+Part=V107, SDK=107.01, SampleCode=1.0.12.1, OEMSampleCode=1.0.12.1 Date:05.22.2018 
+    
+   * Updated Sample Code with MSR/Chip/Contactless selections for EMV transactions
+   * Updated Sample Code with Transaction Timeout for EMV transactions
+   * Updated OEM Sample Code to support DynaWave over UART through mDynamo 
+   * Updated SDK to support DynaWave over Serial/UART interface.
+   * Added isDeviceOEM in SDK
+
+**********************************************************************************
+**********************************************************************************
+Part=V108, SDK=108.01, SampleCode=1.0.17.1, OEMSampleCode=1.0.17.1 Date:01.24.2019 
+    
+   * Updated SDK to support tDynamo over BLE with new Service UUID
+   * Updated SDK to support HID keyboard driver update in Windows 10 Version 1809
+   * Updated SDK to allow retrieving battery level from eDynamo
+   * Added getDeviceFeature and getPowerManagementValue methods to MTSCRA class
+   * Updated Sample Code to enable/disable buttons based on device features
+   * Updated Sample Code to allow retrieving battery level from the device
+
+**********************************************************************************
+**********************************************************************************
+Part=V109, SDK=109.01, SampleCode=1.0.18.1, OEMSampleCode=1.0.18.1 Date:10.10.2019 
+    
+   * Updated SDK to support iDynamo 6
+   * Added strong-named DLLs
+
+**********************************************************************************
+**********************************************************************************
+Part=V110, SDK=109.01, SampleCode=1.0.18.1, OEMSampleCode=1.0.18.1 Date:11.25.2019 
+    
+   * Added EMV Flowchart document
+
+**********************************************************************************
+**********************************************************************************
+Part=111, SDK=111.01, SampleCode=1.0.21.1, OEMSampleCode=1.0.21.1 Date:11.16.2020 
+    
+   * Updated SDK to support iDynamo 6 with PID 1F
+   * Updated OEM Sample to resolve SPI send command issue
+
+**********************************************************************************
+**********************************************************************************
